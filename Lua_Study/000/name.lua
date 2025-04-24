@@ -1,0 +1,1 @@
+print("Script name: " .. arg[0])

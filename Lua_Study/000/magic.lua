@@ -1,0 +1,3 @@
+dofile("simple.lua")
+
+game()

@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.fontFamily": "D2Coding, Consolas, 'Courier New', monospace",
+    "terminal.integrated.shellArgs.windows": ["/k", "chcp 65001"],
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}
