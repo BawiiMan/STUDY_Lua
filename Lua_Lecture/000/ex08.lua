@@ -1,14 +1,11 @@
--- 인자로 넘어온 테이블이 함수 안에서 변경되는 경우
+-- 기본값 인자
 
-local function show(t)
-	io.write('{')
-	for k, v in pairs(t) do
-		io.write('['..k..']='..v..', ')
-	end
-	print('}')
+local function pow(a,b)
+	b = b or 1
+	return a^b
 end
 
-
--- 가변개수인자
-
-local function foo(...)
+local x = pow(2)
+print(x)
+x = pow(3)
+print(x)
