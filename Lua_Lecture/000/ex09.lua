@@ -1,11 +1,16 @@
 local t = {
-	x=11.23,
+	x=11,
+	y=2,
 	f=function()
 		print('hi')
 	end
 }
 
-t.f()
-t.g = function() print('hello') end
+function t.g(self,a)
+	local r = a*self.y + self.x
+	self.f()
+	return r
+end
 
-t.g()
+local a = t:g(100)
+print(a)
